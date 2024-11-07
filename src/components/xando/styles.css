@@ -15,7 +15,7 @@
 }
 
 .title span{
-    color: #26ffcb;
+    color: #97cbdc;
     padding-left: 15px;
 }
 
@@ -28,10 +28,13 @@
     border-radius: 50px;
     background: #1f3540;
     font-size: 26px;
-    color: #26ffcb;
+    color: #97cbdc;
     margin-bottom: 50px;
 }
-
+.hr{
+    background: #dde8f0;
+    height: .2px;
+}
 .boxes{
     display: flex;
     height: 9rem;
@@ -45,8 +48,8 @@
     margin: 50px;
 }
 .board{
-    height: 35rem;
-    width: 35rem;
+    height: 32rem;
+    width: 31rem;
     display: flex;
     margin: auto;
     margin-bottom: 0;
@@ -55,25 +58,25 @@
     padding: 20px 20px;
     height: 50px;
 }
-/* @media screen and (max-width: 725px){
+@media screen and (max-width: 725px){
     .board{
-        height: 27.5rem;
-        width: 20rem;
-        margin-left: 23px;
+        height: 25rem;
+        width: 25rem;
+        margin: 0;
+        margin-top: 20%;
+        margin-left: 9px;
     }
     .boxes{
-        height: 6.5rem;
-        width: 6.5rem;
+        width: 7.5rem;
+        height: 7.5rem;
     }
     .title{
         font-size: 3rem;
     }
     .reset{
-        position: fixed;
         width: 10rem;
         height: 4rem;
         bottom: 20px;
-        margin: 0;
-        right: 5rem;
+        margin-top: 20px;
     }
-} */
+}

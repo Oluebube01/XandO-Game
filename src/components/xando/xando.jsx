@@ -73,8 +73,11 @@ const xando = () => {
     if(winner=="x"){
       titleRef.current.innerHTML = `Congratulations: <img src=${cross}> wins`
     }
-    else{
+    else if (winner=="0"){
       titleRef.current.innerHTML = `Congratulations: <img src=${circle}> wins`
+    }
+    else{
+      titleRef.current.innerHTML = `oops nobody wins`
     }
   }
 
@@ -90,8 +93,9 @@ const xando = () => {
 
     <div className='container'>
       <h1 className="title" ref={titleRef}>
-        X and O Game In <span>React</span>
+        X and O <span>Game</span>
       </h1>
+      <hr className='hr'></hr>
       <div className="board">
         <div className="row1">
           <div className="boxes" ref={box1} onClick={(e)=>{toggle(e,0)}}></div>
